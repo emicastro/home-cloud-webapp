@@ -28,7 +28,7 @@ const DirCard = (props) => {
   const path = props.path ? `${props.path}-${props.name}` : props.name;
   const downloadLink = `${process.env.REACT_APP_API_URL}/download/${path}`;
 
-  // TODO: Edit and delete files
+  // TODO: Move, Edit and Delete files
   return (
     <Card>
       <Card.Body>
