@@ -1,7 +1,7 @@
-import React from 'react'
-import BpAlert from 'react-bootstrap/Alert'
+import React from 'react';
+import BpAlert from 'react-bootstrap/Alert';
 
-const Alert = (props) => {
+const Alert = (props) => (
   <BpAlert
     variant={props.alert.success ? 'success' : 'danger'}
     onClose={props.onClose}
@@ -9,6 +9,6 @@ const Alert = (props) => {
   >
     {props.alert.message}
   </BpAlert>
-}
+);
 
-export default Alert
+export default Alert;
